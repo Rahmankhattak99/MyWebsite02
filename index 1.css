@@ -1,0 +1,337 @@
+/* -------------------------------------------FIRST-SECTION------------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: #ffffff;
+}
+
+.first-section {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-bottom: 120px;
+}
+
+.first-section::before {
+    background: url(./image/image\ 5.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.first-section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-section nav img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.first-section .list-style a {
+    font-family: 'Tilt Warp', cursive;
+    text-transform: capitalize;
+    padding: 10px 10px;
+    margin: 10px;
+    cursor: pointer;
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+.first-section .list-style a:hover {
+    color: yellow;
+}
+
+.first-section .first-section-text h1 span {
+    color: yellow;
+    font-size: 70px;
+    font-weight: 900px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.first-section .first-section-text p {
+    color: rgb(252, 252, 251);
+    font-size: 18px;
+    font-family: 'Tilt Warp', cursive;
+    margin-left: 50px;
+    margin-top: 30px;
+    /* margin-right: 50px; */
+}
+
+.first-section .first-section-text button {
+    padding: 15px 40px;
+    font-size: 18px;
+    margin-top: 70px;
+    background: transparent;
+    border: 1px solid rgb(250, 249, 249);
+    outline: none;
+    border-radius: 5px;
+    transition: 1s;
+    color: #e5e7eb;
+}
+
+.first-section .first-section-text button:hover {
+    background-color: yellow;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.first-section .none {
+    display: none;
+}
+
+/* ---------------------------------------------MEDIA-QUREY--------------------------------------------- */
+
+@media (max-width: 850px) {
+
+    .first-section .circle {
+        display: none;
+    }
+
+    .first-section .first-section-text button{
+        padding: 10px 20px;
+    }
+
+    .first-section .list-style a{
+        display: none;
+    }
+
+    .first-section {
+        height: 100%;
+        width: 100%;
+    }
+
+    .first-section .search input {
+        display: none;
+    }
+
+    .first-section .none {
+        display: block;
+        margin-right: 20px;
+        color: #e5e7eb;
+    }
+
+    .first-section .first-section-text h1 {
+        font-size: 20px;
+    }
+
+    .first-section .first-section-text h1 span {
+        font-size: 35px;
+    }
+
+    .first-section .first-section-text p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+
+/* --------------------------------------------SECOND-SECTION-------------------------------------------- */
+
+.second-section{
+    height: 100%;
+    width: 100%;
+}
+
+.second-section .second-section-h1 h1{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    color: yellow;
+    text-transform: capitalize;
+}
+
+.second-section .form-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.second-section .form-detail .red input{
+    width: 51rem;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    color: #030304;
+    border: none;
+    outline: none;
+}
+
+.second-section .form-detail .redbg input{
+    width: 24rem;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    color: #010101;
+    border: none;
+    outline: none;
+}
+
+.second-section .form-detail .yellow input{
+    width: 51rem;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    color: #010101;
+    border: none;
+    outline: none;
+}
+
+.second-section .form-detail .blue textarea{
+    width: 51rem;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    color: #020202;
+    border: none;
+    outline: none;
+}
+
+.second-section .btn button{
+    padding: 10px 20px;
+    width: 53.5rem;
+    margin-bottom: 50px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    color: #020304;
+    border: none;
+    outline: none;
+}
+
+/* ----------------------------------------------MEDIA-QUREY---------------------------------------------- */
+
+@media (max-width: 850px){
+    .second-section{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .second-section .second-section-h1 h1{
+       font-size: 15px;
+    }
+
+    .second-section .form-detail .red input{
+        width: 15rem;
+    }
+
+    .second-section .form-detail .redbg span input{
+        width: 15rem;
+    }
+
+    .second-section .form-detail .yellow input{
+        width: 15rem;
+    }
+
+    .second-section .form-detail .blue textarea{
+        width: 15rem;
+    }
+
+    .second-section .form-detail .btn button{
+        width: 15rem;
+        font-size: 15px;
+    }
+}
+
+/*------------------------------------------------ FOOTER ------------------------------------------------*/
+
+.footer {
+    background-color: yellow;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.footer .last-footer h1 {
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    font-family: 'Fredoka One', cursive;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.footer .list-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .list-footer a{
+    text-decoration: none;
+    font-family: 'Tilt Warp', cursive;
+    margin: 10px;
+    color: black;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.footer .list-footer a:hover{
+    color: #f80505;
+}
+
+.footer .footer-icon{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.footer .footer-icon i:hover{
+    color: red;
+}
+
+@media (max-width: 850px){
+
+    .footer{
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer .list-footer a{
+        font-size: 10px;
+        margin: 2px;
+    }
+
+    .footer .last-footer h1 {
+       font-size: 20px;
+    }
+
+    .footer .footer-icon{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/*-------------------------------------------- End This Site --------------------------------------------*/
+/*-------------------------------------------- End This Site --------------------------------------------*/
+/*-------------------------------------------- End This Site --------------------------------------------*/
+/*-------------------------------------------- End This Site --------------------------------------------*/
+/*-------------------------------------------- End This Site --------------------------------------------*/
+/*-------------------------------------------- End This Site --------------------------------------------*/
+/*-------------------------------------------- End This Site --------------------------------------------*/
+/*-------------------------------------------- End This Site --------------------------------------------*/
+/*-------------------------------------------- End This Site --------------------------------------------*/
+/*-------------------------------------------- End This Site --------------------------------------------*/
+/*-------------------------------------------- End This Site --------------------------------------------*/
+/*-------------------------------------------- End This Site --------------------------------------------*/
